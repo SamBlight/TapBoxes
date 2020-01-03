@@ -64,11 +64,11 @@ namespace IdleClickerKit
             thumbnails = Resources.LoadAll<Sprite>("Items");
             foreach (Sprite thumbnail in thumbnails)
             {
-                GameObject container = Instantiate(ItemButton) as GameObject;%
+                GameObject container = Instantiate(ItemButton) as GameObject;
                 container.GetComponent<Image>().sprite = thumbnail;
                 container.name = number.ToString();
-                Load(this);
-                container.GetComponentInChildren<Text>().text = "";
+                //Load(this);
+                //container.GetComponentInChildren<Text>().text = "";
                 container.transform.SetParent(ItemButtonContainer.transform, false);
                 number++;
             }
